@@ -1,0 +1,29 @@
+input{
+    width: 80%;
+}
+label{
+    display: block;
+    font-size: large;
+}
+.form{
+    background-color:rgb(72, 1, 131);
+}
+.label{
+    margin-top: 10px;
+}
+.button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(212, 55, 81);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: larger;
+}
+.button:hover{
+    background-color: rgb(180, 57, 78) ;
+}
