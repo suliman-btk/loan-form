@@ -4,7 +4,9 @@ import Massege from './Massege';
 
 function InputLabel(){
 
-
+// the good practise it is to make all the state or varibale one {object state} not like i'm doning
+// also the main impotant thins it is to linke the read(value) and write(onChange or ....) in html with state
+// whene you apply thiss method then you are apply (one source method) this one of the main consept in react    
     const [name,setName]=useState("")
     const [phone,setPhone]=useState("")
     const [age,setAge]=useState("")
@@ -12,6 +14,17 @@ function InputLabel(){
     const [salary,setSalary]=useState("")
     const [showingDialog, setShowingDialog] = useState(false)
     const[open,setOpen]=useState(false)
+
+    // const [inputLabele,setInputLabele]={
+    //     name:"",
+    //     phone:"",
+    //     age:"",
+    //     check:"",
+    //     salary:"",
+    //     showingDialog:""
+    // }
+    // so if you want to link the value of state on the jsx it will be like this value={inputLabele.name} 
+    //and set it will be like this onChange={(event)=>{setInputLabele(...inputLabele,name:event.target.value)}}       
 
     function handleClik(e){
         e.preventDefault()
@@ -64,7 +77,7 @@ function InputLabel(){
                 </div>
                 <div className='label'>
                     <label htmlFor="">Salary:</label>
-                    <input type="text" name="" id="" onChange={(e)=>setSalary(e.target.value)}/>
+                    <input type="text" name="" id=""  value={salary} onChange={(e)=>setSalary(e.target.value)}/>
                 </div>
 
                 <div className='label' style={{marginTop:"20px"}}>
